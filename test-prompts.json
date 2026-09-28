@@ -1,0 +1,11 @@
+{
+  "skill":"minimum-batch-evidence-gate","version":"0.1.0","source_book":"24 条 Bilibili AI 搞钱视频证据包","darwin_compatible":true,
+  "test_cases":[
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"我想做 100 个提示词课程，最小验证批次应该是什么？","expected_behavior":"激活本 Skill，先做一个可用模块并争取付款/定金。","notes":"数字产品实验"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"给我一个七天计划，测试低粉视频挂车有没有机会。","expected_behavior":"激活本 Skill，定义小批内容、下游信号和停止线。","notes":"挂车实验"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"远程求职要先投多少个岗位，看到什么再扩大？","expected_behavior":"激活本 Skill，设计高匹配小批次和回复证据门。","notes":"求职实验"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"我只是想少做一点，结果好不好无所谓。","expected_behavior":"不激活；没有可裁决信号，不是证据批次。","notes":"随意缩量诱饵"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"实验已完成，帮我分析曝光到付款具体掉在哪一层。","expected_behavior":"不激活；应激活 evidence-based-conversion-funnel。","notes":"兄弟 Skill 混淆"},
+    {"id":"edge-01","type":"edge_case","prompt":"高客单服务两周可能只有一个客户，怎么设计最小批次？","expected_behavior":"激活；延长周期并结合定性拒因，不机械套固定数量。","notes":"低频边界"}
+  ],"minimum_pass_rate":0.8
+}
